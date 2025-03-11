@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
+
 import Login from './components/login'
+import Chatbot from './components/popup'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -10,6 +12,7 @@ function App() {
        <Routes>
 
         <Route path='/login' element={<Login/>}/>
+        <Route path='/' element={<Chatbot/>}/>
        </Routes>
     </div>
        
